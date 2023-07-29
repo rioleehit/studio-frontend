@@ -15,7 +15,6 @@
   "license": "AGPL-3.0",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
-    "@edx/edx-bootstrap": "^1.0.0",
     "@edx/paragon": "3.4.8",
     "airbnb-prop-types": "^2.10.0",
     "classnames": "^2.2.5",
