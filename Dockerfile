@@ -11,7 +11,9 @@ COPY src/ src/
 COPY package.json .
 COPY package-lock.json .
 COPY edx-edx-bootstrap-1.0.4.tgz edx-edx-bootstrap-1.0.4.tgz
-RUN npm install ./edx-edx-bootstrap-1.0.4.tgz
+RUN npm install ./edx-edx-bootstrap-1.0.4.tgz --save
+COPY edx-paragon-20.18.1.tgz edx-paragon-20.18.1.tgz
+RUN npm install ./edx-paragon-20.18.1.tgz --save
 RUN npm install
 
 WORKDIR /studio-frontend
