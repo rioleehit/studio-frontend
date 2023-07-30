@@ -10,6 +10,8 @@ COPY config/ config/
 COPY src/ src/
 COPY package.json .
 COPY package-lock.json .
+COPY edx-edx-bootstrap-1.0.4.tgz edx-edx-bootstrap-1.0.4.tgz
+RUN npm install ./edx-edx-bootstrap-1.0.4.tgz
 RUN npm install
 
 WORKDIR /studio-frontend
